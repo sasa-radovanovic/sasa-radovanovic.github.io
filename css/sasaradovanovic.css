@@ -1,0 +1,81 @@
+.myPortalNavbar {
+	min-height: 220px !important;
+}
+
+.myImg {
+	width: 180px;
+	height: 180px;
+	border-radius: 90px;
+	-webkit-border-radius: 90px;
+	-moz-border-radius: 90px;
+	background: url(../img/github.PNG) no-repeat;
+	background-size: 182px 225px;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.myImgLogo {
+	margin-bottom: 10px;
+}
+
+.myProjectName {
+	position: absolute;
+    top: 35px;
+    left: 250px;
+    text-align: center;
+}
+
+.myNameText {
+	font-size: 40px;
+}
+
+.appLink {
+	position: absolute;
+	top: 70px;
+	right: 20px;
+}
+
+.myOccupation {
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.projButton {
+	color: white !important;
+}
+
+.projectLogoHolder {
+	border: 1px solid gray;
+	padding: 10px;
+	text-align: center;
+}
+
+.projLogo {
+	max-height: 150px;
+}
+
+.projectDescHolder {
+	margin-top: 20px;
+	border: 1px solid gray;
+	padding: 10px;
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) {
+    .appLink {
+        display:none !important;
+    }
+}
+
+.myAlert {
+	text-align: center;
+}
+
+.previewImage {
+	max-height: 500px;
+	max-width: 700px;
+}
+
+.myUl {
+	text-align: left;
+}
