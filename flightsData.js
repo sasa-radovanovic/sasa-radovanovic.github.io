@@ -63,6 +63,7 @@ CustomMarker.prototype.getPosition = function() {
 /* ***** End CustomMarker ***** */
 
 function initialize() {
+  $('#target-div').load('https://my.flightradar24.com/micika #main');
   var markers = [];
   var bounds = new google.maps.LatLngBounds();
   var myOptions = {
@@ -232,7 +233,48 @@ function initialize() {
   	pos = new google.maps.LatLng(-34.81273, -58.539833);
   	addNewMarker(map, pos, "Buenos Aires / Ministro Pistarini");
 	bounds.extend(pos);
-    	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(39.489311, -0.481622),new google.maps.LatLng(45.809833, 21.337872)], strokeColor: "#e90000", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+    pos = new google.maps.LatLng(22.989153, -82.409086);
+    addNewMarker(map, pos, "Havana / Jose Marti");
+    bounds.extend(pos);
+    pos = new google.maps.LatLng(18.429664, -69.668925);
+    addNewMarker(map, pos, "Santo Domingo / Las Americas");
+    bounds.extend(pos);
+    pos = new google.maps.LatLng(-8.748169, 115.167172);
+    addNewMarker(map, pos, "Bali / Ngurah Rai");
+    bounds.extend(pos);
+    pos = new google.maps.LatLng(-6.125567, 106.655897);
+    addNewMarker(map, pos, "Jakarta / Soekarno Hatta");
+    bounds.extend(pos);
+    pos = new google.maps.LatLng(40.080111, 116.584556);
+    addNewMarker(map, pos, "Beijing / Capital");
+    bounds.extend(pos);
+    pos = new google.maps.LatLng(43.352072, 77.040508);
+    addNewMarker(map, pos, "Almaty / Almaty");
+    bounds.extend(pos);
+    pos = new google.maps.LatLng(50.865917, 7.142744);
+    addNewMarker(map, pos, "Cologne / Koln Bonn");
+    bounds.extend(pos);
+
+    pos = new google.maps.LatLng(47.464722, 8.549167);
+    addNewMarker(map, pos, "Zurich / Kloten");
+    bounds.extend(pos);
+
+    pos = new google.maps.LatLng(41.248055, -8.681389);
+    addNewMarker(map, pos, "Porto / Porto");
+    bounds.extend(pos);
+
+    pos = new google.maps.LatLng(27.931886, -15.386586);
+    addNewMarker(map, pos, "Las Palmas / Gran Canaria");
+    bounds.extend(pos);
+
+    pos = new google.maps.LatLng(52.559686, 13.287711);
+    addNewMarker(map, pos, "Berlin / Tegel");
+    bounds.extend(pos);
+
+
+
+
+    	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(39.489311, -0.481622),new google.maps.LatLng(45.809833, 21.337872)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
   	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(52.378542, 13.520619),new google.maps.LatLng(47.439328, 19.261808)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
@@ -240,13 +282,13 @@ function initialize() {
 	  flightPath.setMap(map);
   	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(44.819383, 20.307067),new google.maps.LatLng(51.450000, 5.374444)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
-  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(55.600000, 37.273333),new google.maps.LatLng(47.439328, 19.261808)], strokeColor: "#e90000", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(55.600000, 37.273333),new google.maps.LatLng(47.439328, 19.261808)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
-  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(49.012779, 2.550000),new google.maps.LatLng(47.439328, 19.261808)], strokeColor: "#e90000", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(49.012779, 2.550000),new google.maps.LatLng(47.439328, 19.261808)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
-  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(40.904675, 29.309189),new google.maps.LatLng(44.819383, 20.307067)], strokeColor: "#c6005d", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(40.904675, 29.309189),new google.maps.LatLng(44.819383, 20.307067)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
-  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(45.630000, 8.723056),new google.maps.LatLng(44.819383, 20.307067)], strokeColor: "#e90000", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(45.630000, 8.723056),new google.maps.LatLng(44.819383, 20.307067)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
   	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(53.630389, 9.988228),new google.maps.LatLng(45.630000, 8.723056)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
@@ -256,7 +298,7 @@ function initialize() {
 	  flightPath.setMap(map);
   	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(45.630000, 8.723056),new google.maps.LatLng(38.774167, -9.134167)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
-  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(43.658411, 7.215872),new google.maps.LatLng(48.110278, 16.569722)], strokeColor: "#e90000", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(43.658411, 7.215872),new google.maps.LatLng(48.110278, 16.569722)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
   	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(61.415278, 23.587778),new google.maps.LatLng(47.439328, 19.261808)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
@@ -268,7 +310,7 @@ function initialize() {
 	  flightPath.setMap(map);
   	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(44.819383, 20.307067),new google.maps.LatLng(59.64982, 17.930365)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
-  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(25.252778, 55.364444),new google.maps.LatLng(47.439328, 19.261808)], strokeColor: "#c6005d", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(25.252778, 55.364444),new google.maps.LatLng(47.439328, 19.261808)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
   	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(13.685833, 100.748889),new google.maps.LatLng(25.252778, 55.364444)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
@@ -280,7 +322,7 @@ function initialize() {
 	  flightPath.setMap(map);
   	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(40.976167, 28.814094),new google.maps.LatLng(41.674065 , 44.958958)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
-  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(32.010556, 34.877222),new google.maps.LatLng(47.439328, 19.261808)], strokeColor: "#e90000", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(32.010556, 34.877222),new google.maps.LatLng(47.439328, 19.261808)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
   	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(40.472228, -3.560944),new google.maps.LatLng(38.774167, -9.134167)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
@@ -298,21 +340,21 @@ function initialize() {
 	  flightPath.setMap(map);
   	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(47.439328, 19.261808),new google.maps.LatLng(40.472228, -3.560944)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
-  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(14.945321, -23.486567),new google.maps.LatLng(16.833611, -25.056944)], strokeColor: "#e90000", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(14.945321, -23.486567),new google.maps.LatLng(16.833611, -25.056944)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
   	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(-8.126389, -34.922778),new google.maps.LatLng(14.945321, -23.486567)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
   	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(14.945321, -23.486567),new google.maps.LatLng(-3.776111, -38.532500)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
-  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(38.774167, -9.134167),new google.maps.LatLng(14.945321, -23.486567)], strokeColor: "#e90000", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(38.774167, -9.134167),new google.maps.LatLng(14.945321, -23.486567)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
   	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(50.460000, 4.452778),new google.maps.LatLng(47.439328, 19.261808)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
   	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(38.774167, -9.134167),new google.maps.LatLng(50.901389, 4.484444)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
-  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(55.971667, 37.415000),new google.maps.LatLng(44.819383, 20.307067)], strokeColor: "#e90000", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(55.971667, 37.415000),new google.maps.LatLng(44.819383, 20.307067)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
-  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(59.800000, 30.265000),new google.maps.LatLng(55.971667, 37.415000)], strokeColor: "#e90000", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(59.800000, 30.265000),new google.maps.LatLng(55.971667, 37.415000)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
   	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(4.191667, 73.529167),new google.maps.LatLng(25.252778, 55.364444)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
@@ -324,17 +366,67 @@ function initialize() {
 	  flightPath.setMap(map);
   	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(22.308889, 113.914722),new google.maps.LatLng(2.743333, 101.698056)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
-  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(40.467500, 50.046667),new google.maps.LatLng(47.439328, 19.261808)], strokeColor: "#ffffff", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(40.467500, 50.046667),new google.maps.LatLng(47.439328, 19.261808)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
-  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(47.439328, 19.261808),new google.maps.LatLng(50.401944, 30.451111)], strokeColor: "#ffffff", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(47.439328, 19.261808),new google.maps.LatLng(50.401944, 30.451111)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
-  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(50.344722, 30.893333),new google.maps.LatLng(40.467500, 50.046667)], strokeColor: "#ffffff", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(50.344722, 30.893333),new google.maps.LatLng(40.467500, 50.046667)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
-  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(48.353783, 11.786086),new google.maps.LatLng(47.439328, 19.261808)], strokeColor: "#ffffff", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(48.353783, 11.786086),new google.maps.LatLng(47.439328, 19.261808)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
-  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(49.623333, 6.204444),new google.maps.LatLng(48.353783, 11.786086)], strokeColor: "#ffffff", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+  	  var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(49.623333, 6.204444),new google.maps.LatLng(48.353783, 11.786086)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
 	  flightPath.setMap(map);
-    	map.fitBounds(bounds);
+		var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(43.352072, 77.040508),new google.maps.LatLng(40.976922, 28.814606)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+		flightPath.setMap(map);
+    var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(52.308613, 4.763889),new google.maps.LatLng(47.464722, 8.549167)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+    flightPath.setMap(map);
+    var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(50.901389, 4.484444),new google.maps.LatLng(18.429664, -69.668925)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+    flightPath.setMap(map);
+    var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(18.429664, -69.668925),new google.maps.LatLng(22.989153,-82.409086)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+    flightPath.setMap(map);
+    var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(27.931886, -15.386586),new google.maps.LatLng(52.308613, 4.763889)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+    flightPath.setMap(map);
+    var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(27.931886, -15.386586),new google.maps.LatLng(38.781311, -9.135919)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+    flightPath.setMap(map);
+    var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(41.248055, -8.681389),new google.maps.LatLng(52.308613, 4.763889)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+    flightPath.setMap(map);
+
+    var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(22.989153, -82.409086),new google.maps.LatLng(50.865917, 7.142744)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+    flightPath.setMap(map);
+
+    var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(48.353783, 11.786086),new google.maps.LatLng(44.818444, 20.309139)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+    flightPath.setMap(map);
+
+    var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(48.353783, 11.786086),new google.maps.LatLng(50.865917, 7.142744)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+    flightPath.setMap(map);
+
+    var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(52.559686, 13.287711),new google.maps.LatLng(44.818444, 20.309139)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+    flightPath.setMap(map);
+
+    var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(52.308613, 4.763889),new google.maps.LatLng(47.436933, 19.255592)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+    flightPath.setMap(map);
+
+
+    var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(43.352072, 77.0405089),new google.maps.LatLng(40.080111, 116.584556)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+    flightPath.setMap(map);
+
+
+    var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(2.745578, 101.709917),new google.maps.LatLng(40.080111, 116.584556)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+    flightPath.setMap(map);
+
+    var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(2.745578, 101.709917),new google.maps.LatLng( -8.748169, 115.167172)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+    flightPath.setMap(map);
+
+
+    var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(-6.125567, 106.655897),new google.maps.LatLng( -8.748169, 115.167172)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+    flightPath.setMap(map);
+
+
+    var flightPath = new google.maps.Polyline({path: [new google.maps.LatLng(-6.125567, 106.655897),new google.maps.LatLng( 40.976922 , 28.814606)], strokeColor: "#f89800", strokeOpacity: 0.7, strokeWeight: 2, geodesic: true });
+    flightPath.setMap(map);
+
+
+    map.fitBounds(bounds);
     google.maps.event.addListener(map, 'zoom_changed', function() {
 	  if(map.getZoom()<2) {
 		map.setZoom(2);	

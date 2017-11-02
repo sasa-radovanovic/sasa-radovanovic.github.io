@@ -1,0 +1,28 @@
+
+
+About application
+
+For actual wireframes from application follow this link
+
+
+Network visualization tool has 3 major parts:
+
+1. Schedule Visualization
+
+Using NVT you can create schedule of your choice (i.e. this can be seasonal schedule of your airline) and have it presented either as static animation or as dynamic one. 
+
+Static animation only shows routes on map (with additional airport data).
+
+Dynamic animation can show you how network actually "breathes". You will have visualization of your network on weekly level (you can select speed of animation and starting point of the week - from Monday 00:00 UTC until Sunday 23:59 UTC). Note that dynamic visualization runs on UTC time, therefore your local departure time will be translated to UTC time (i.e. if your flight departs from Amsterdam on Monday at 00:30, in dynamic visualization that flight will depart on Sunday 23:30 during winter time and on 22:30 during summer time). Your flights will actually fly for number of minutes you specified and you can keep track of the progress in table above map. You can pause animation at any time, change animation speed, restart it, etc... 
+
+This feature is especially useful if you are working for an airline and you are creating seasonal schedule since you can visualize all weekly trafic and perform some high-level analisys.
+
+2. Airline Network Visualization
+
+Using NVT you can visualize network of all major airlines in the world and cross-compare up to 4 of them on a single map. You can even compare airline network against your own schedule/combination. 
+
+3. Airport Visualization and Stats
+
+Installation and setup
+
+Authors
